@@ -15,6 +15,8 @@ class Blockchain(object):
         self.nodes = set()
 
         self.new_block(previous_hash=1, proof=100)
+        self.test = f"{self.chain}/chain"
+        
 
     def new_block(self, proof, previous_hash=None):
         """
